@@ -1,0 +1,7 @@
+title: AI for Nowcasting Pilot Project
+author: WMO AINPP Steering Group
+logo: assets/WMO-logo.png
+copyright: "2025"
+execute:
+  execute_notebooks: force
+

@@ -1,0 +1,8 @@
+format: jb-book
+root: landing
+chapters:
+  - file: steering
+  - file: asia
+  - file: africa
+  - file: latin_america
+
