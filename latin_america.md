@@ -8,6 +8,8 @@ The Latin America Testbed is comprised of four intercomparisons:
 
 Contents:
 
+* [Committee](#committee)
+* [Participants](#participants)
 * [South America domains](#south-america-domains)
 * [Mexico domain](#mexico-domain)
 * [Lightning Nowcasting Intercomparison](#lightning-nowcasting-intercomparison)
@@ -16,6 +18,30 @@ Contents:
         * [Target Data](#target-data)
         * [Example Prediction Data](#example-prediction-data)
 * [Precipitation Nowcasting Intercomparison](#precipitation-nowcasting-intercomparison)
+
+## Committee
+
+- John Cintineo (NOAA)
+- Alan Calheiros (INPE)
+- Rachel Albrecht (USP)
+- Paola Salio and Juan Ruiz (UBA)
+- Shigenori Otsuka (RIKEN)
+- Haiyu Dong and Zuliang Fang (Microsoft)
+- Raúl Aquino Santos (Universidad de Colima)
+- Fernando Pech May (ITSR)
+- Pedro Cruz e Silva (NVIDIA)
+- Simon Pfreundschuh (CSU)
+
+## Participants
+
+| Product Type | Product Provider | Source Data | Lead Time (h) | Time Res. | Spatial Res. (SA/Mex) |
+| ------------ | ---------------- | ----------- | ------------- | --------- | --------------------- |
+| Lightning    | NOAA/CIMSS       | GOES        |  2            |   10 min  |    10 km / 10 km      |
+| Lightning    | PyFortraCC/Pers. | GOES        |  2            |   10 min  |     10 km / 10 km     |
+| QPF          | Microsoft        | Radar / GOES|  2?           |   10 min  |          5 km?        |
+| QPF          | Brazil/INPE      | Radar / GOES|  2?           |   10 min  |          5 km?        |
+| QPF          | Japan/RIKEN      |  GOES       |  6            |   60 min  |       2 km / 10 km    |
+| QPF          | Colo. State Univ.|  GOES?      |  2?           |   10 min  |          5 km?        |
 
 ## South America domains
 
