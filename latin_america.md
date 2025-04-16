@@ -43,8 +43,8 @@ After reading this wiki, see [this notebook](https://colab.research.google.com/d
 
 The dataset can be found on zenodo (https://zenodo.org/records/14261376). The initial version of this dataset is for 30 days for each domain:
 
-South America: 5th - 9th of September 2023 through February 2024
-Mexico: 5th - 9th of April 2024 through September 2024
+- **South America: 5th - 9th of September 2023 through February 2024**
+- **Mexico: 5th - 9th of April 2024 through September 2024**
 
 #### Target Data
 
