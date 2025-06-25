@@ -162,7 +162,7 @@ We have three domains for this intercomparison:
   
 ### The Dataset
 
-All data is remaped to a 0.1-deg x 0.1-deg grid. 
+All data is remapped to a 0.1-deg x 0.1-deg grid. 
 
 Here are the evaluation periods for each domain:
 
