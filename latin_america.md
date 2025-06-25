@@ -150,5 +150,33 @@ variables:
 
 ## Precipitation Nowcasting Intercomparison
 
+### Problem
 
+The problem we are trying to solve is predicting precipitation amount (quantitative precipitation forecast, QPF) in hourly increments over the a period of 6 hours from the forecast start time.
 
+We have three domains for this intercomparison:
+
+- Central America domain (see figure above)
+- South America domain (see figure above)
+- Brazil RADAR, Jaraguari domain
+  
+### The Dataset
+
+All data is remaped to a 0.1-deg x 0.1-deg grid. 
+
+Here are the evaluation periods for each domain:
+
+- Central America: January-December of 2024, every hour
+- South America: January-December of 2024, every hour
+- **Brazil, RADAR domain: ???**
+
+#### Target Data
+
+We use several sources for the target/truth data:
+
+- Central America domain: GSMaP NRT
+- South America domain: GSMaP NRT
+- Brazil RADAR, Jaraguari domain: radar-derived QPF.
+
+**Q: Where is the target data? Who will create the QPF from GSMaP mm/hr data?**
+**Example target data template needed!**
