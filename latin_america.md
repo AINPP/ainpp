@@ -174,7 +174,7 @@ Here are the evaluation periods for each domain:
 
 We use several sources for the target/truth data:
 
-- Central America domain: [GSMaP]([url](https://sharaku.eorc.jaxa.jp/GSMaP/)) near-real time (NRT)
+- Central America domain: [GSMaP](https://sharaku.eorc.jaxa.jp/GSMaP/) near-real time (NRT)
 - South America domain: GSMaP NRT
 - Brazil RADAR, Jaraguari domain: radar-derived QPF.
 
