@@ -158,7 +158,7 @@ We have three domains for this intercomparison:
 
 - Central America domain (see figure above)
 - South America domain (see figure above)
-- Brazil RADAR, Jaraguari domain
+- Brazil RADAR, Jaraguari domain (see "RADAR" inset in South America image above)
   
 ### The Dataset
 
@@ -174,7 +174,7 @@ Here are the evaluation periods for each domain:
 
 We use several sources for the target/truth data:
 
-- Central America domain: GSMaP NRT
+- Central America domain: [GSMaP]([url](https://sharaku.eorc.jaxa.jp/GSMaP/)) near-real time (NRT)
 - South America domain: GSMaP NRT
 - Brazil RADAR, Jaraguari domain: radar-derived QPF.
 
