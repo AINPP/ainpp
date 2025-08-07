@@ -151,7 +151,7 @@ variables:
 
 ## Precipitation Nowcasting Intercomparison
 
-### Problem {#precip-problem}
+### Problem { #precip-problem }
 
 The problem we are trying to solve is predicting precipitation amount (quantitative precipitation forecast, QPF) in hourly increments over the a period of 6 hours from the forecast start time.
 
