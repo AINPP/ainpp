@@ -10,10 +10,9 @@ Contents:
 
 * [Committee](#committee)
 * [Participants](#participants)
-* [South America domains](#south-america-domains)
-* [Mexico domain](#mexico-domain)
 * [Lightning Nowcasting Intercomparison](#lightning-nowcasting-intercomparison)
     * [Problem](#problem)
+    * [Domains](#domains)
     * [The Dataset](#the-dataset)
         * [Target Data](#target-data)
         * [Example Prediction Data](#example-prediction-data)
@@ -43,19 +42,6 @@ Contents:
 | QPF          | Japan/RIKEN      |  GOES       |  6            |   60 min  |       2 km / 10 km    |
 | QPF          | Colo. State Univ.|  GOES?      |  2?           |   10 min  |          5 km?        |
 
-## South America domains
-
-The precipitation nowcasting intercomparison in South America will be at high resolution for a particular radar (see the green circle).
-The lightning nowcasting intercomparison will be for the entire image below.
-
-<img src="_images/SA_domains.png" width=400>
-
-## Mexico domain
-
-The domain for both the precipitation and lightning nowcasting intercomparisons will be over the image below.
-
-<img src="_images/Mexico_domain.png" width=400>
-
 ## Lightning Nowcasting Intercomparison
 
 ### Problem
@@ -64,6 +50,20 @@ The problem we are trying to solve is predicting lightning in 120 minutes follow
 Since we are trying to only predict the occurrence of any lightning (i.e. ≥ 1 flash), the flash-extent density fields can be binarized into lightning masks. Predictions are in units of "probability of **any** lightning" within a given time frame.
 
 After reading this wiki, see [this notebook](https://colab.research.google.com/drive/1CTz2oMtHW_5m6YZAqJRwa0hp3nFTOm_3#scrollTo=aSNRqLueWA15) for some examples on working with the data.
+
+### Domains
+
+#### Mexico Domain
+
+One domain for the lightning intercomparison will be centered over Mexico, as shown below.
+
+<img src="_images/MexicoDomain.png" width=400>
+
+#### South America Domain
+
+Another domain for the lightning intercomparison will be over most of South America, as shown below.
+
+<img src="_images/SouthAmericaDomain.png" width=400>
 
 ### The Dataset
 
