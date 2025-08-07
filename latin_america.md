@@ -19,6 +19,8 @@ Contents:
 * [Precipitation Nowcasting Intercomparison](#precipitation-nowcasting-intercomparison)
     * [Problem](#precip-problem)
     * [Domain](#precip-domain)
+    * [The Dataset](#precip-dataset)
+    	* [Target Data](#precip-target-data)
 
 ## Committee
 
@@ -39,10 +41,10 @@ Contents:
 | ------------ | ---------------- | ----------- | ------------- | --------- | --------------------- |
 | Lightning    | NOAA/CIMSS       | GOES        |  2            |   10 min  |    10 km / 10 km      |
 | Lightning    | PyFortraCC/Pers. | GOES        |  2            |   10 min  |     10 km / 10 km     |
-| QPF          | Microsoft        | Radar / GOES|  2?           |   10 min  |          5 km?        |
-| QPF          | Brazil/INPE      | Radar / GOES|  2?           |   10 min  |          5 km?        |
-| QPF          | Japan/RIKEN      |  GOES       |  6            |   60 min  |       2 km / 10 km    |
-| QPF          | Colo. State Univ.|  GOES?      |  2?           |   10 min  |          5 km?        |
+| QPF          | Microsoft        | Radar / GOES|  6            |   10 min  |          5 km         |
+| QPF          | Brazil/INPE      | Radar / GOES|  6            |   10 min  |          5 km         |
+| QPF          | Japan/RIKEN      |  GOES       |  6            |   60 min  |          10 km        |
+| QPF          | Colo. State Univ.|  GOES?      |  6            |   10 min  |          5 km         |
 
 ## Lightning Nowcasting Intercomparison
 
@@ -169,9 +171,16 @@ The domain for the precipitation intercomparison encompasses South America and C
 
 All prediction data is to be remapped to a 0.1-deg x 0.1-deg grid. The evaluation period is January-December of 2024, every hour.
 
+<a id="precip-target-data"></a>
 #### Target Data
 
 We use several sources for the target/truth data:
 
-- Central America domain: [GSMaP](https://sharaku.eorc.jaxa.jp/GSMaP/) near-real time (NRT)
-- South America domain: GSMaP NRT
+- [GSMaP](https://sharaku.eorc.jaxa.jp/GSMaP/) NRT (latency = 4 hours)
+- GSMaP NOW (latency = < 5 minutes)
+- GSMaP MVK (latency = 10 days)
+- CPTEC Merge
+- [IMERG Early](https://gpm.nasa.gov/taxonomy/term/1357) (latency = 4 hours)
+- Rain gauge data in Brazil
+
+The GitHub for the target dataset can be found [here](https://github.com/SInApSE-INPE/AINPP-Dataset/tree/main), and download of the actual data files can be found [here](https://datamap.pcs.usp.br/app/datasets/09760610-246a-4208-886f-fdab6ddca1fe).
