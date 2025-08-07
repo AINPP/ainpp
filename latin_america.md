@@ -17,7 +17,7 @@ Contents:
         * [Target Data](#target-data)
         * [Example Prediction Data](#example-prediction-data)
 * [Precipitation Nowcasting Intercomparison](#precipitation-nowcasting-intercomparison)
-    * [Problem](#problem)
+    * [Problem](#precip-problem)
 
 ## Committee
 
@@ -151,7 +151,7 @@ variables:
 
 ## Precipitation Nowcasting Intercomparison
 
-### Problem
+### Problem {#precip-problem}
 
 The problem we are trying to solve is predicting precipitation amount (quantitative precipitation forecast, QPF) in hourly increments over the a period of 6 hours from the forecast start time.
 
