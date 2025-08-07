@@ -18,6 +18,7 @@ Contents:
         * [Example Prediction Data](#example-prediction-data)
 * [Precipitation Nowcasting Intercomparison](#precipitation-nowcasting-intercomparison)
     * [Problem](#precip-problem)
+    * [Domain](#precip-domain)
 
 ## Committee
 
@@ -56,13 +57,13 @@ After reading this wiki, see [this notebook](https://colab.research.google.com/d
 
 #### Mexico Domain
 
-One domain for the lightning intercomparison will be centered over Mexico, as shown below.
+One domain for the lightning intercomparison will be centered over Mexico, as shown below. The northwest corner point is (33N, 120W) and the southeast corner point is (12N, 85W), and the domain has 0.1-deg by 0.1-deg resolution.
 
 <img src="_images/MexicoDomain.png" width=400>
 
 #### South America Domain
 
-Another domain for the lightning intercomparison will be over most of South America, as shown below.
+Another domain for the lightning intercomparison will be over most of South America, as shown below. The northwest corner point is (6N, 83W) and the southeast corner point is (55S, 33W), and the domain has 0.1-deg by 0.1-deg resolution.
 
 <img src="_images/SouthAmericaDomain.png" width=400>
 
@@ -156,21 +157,17 @@ variables:
 
 The problem we are trying to solve is predicting precipitation amount (quantitative precipitation forecast, QPF) in hourly increments over the a period of 6 hours from the forecast start time.
 
-We have three domains for this intercomparison:
+<a id="precip-domain"></a>
+### Domain
 
-- Central America domain (see figure above)
-- South America domain (see figure above)
-- Brazil RADAR, Jaraguari domain (see "RADAR" inset in South America image above)
-  
+The domain for the precipitation intercomparison encompasses South America and Central America, termed "LATAM", as shown below. The northwest corner point is (33N, 120W) and the southeast corner point is (55S, 33W), and the domain has 0.1-deg by 0.1-deg resolution.
+
+<img src="_images/LATAM_Domain.png" width=500>
+
+<a id="precip-dataset"></a>
 ### The Dataset
 
-All data is remapped to a 0.1-deg x 0.1-deg grid. 
-
-Here are the evaluation periods for each domain:
-
-- Central America: January-December of 2024, every hour
-- South America: January-December of 2024, every hour
-- **Brazil, RADAR domain: ???**
+All prediction data is to be remapped to a 0.1-deg x 0.1-deg grid. The evaluation period is January-December of 2024, every hour.
 
 #### Target Data
 
@@ -178,7 +175,3 @@ We use several sources for the target/truth data:
 
 - Central America domain: [GSMaP](https://sharaku.eorc.jaxa.jp/GSMaP/) near-real time (NRT)
 - South America domain: GSMaP NRT
-- Brazil RADAR, Jaraguari domain: radar-derived QPF.
-
-**Q: Where is the target data? Who will create the QPF from GSMaP mm/hr data?**
-**Example target data template needed!**
